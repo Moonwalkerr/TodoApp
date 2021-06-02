@@ -1,10 +1,18 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { AppContext } from "../../context/context";
 
 const InputField = () => {
   const [inputValue, setInputValue] = useState("");
+
+  //   fetching the todo piece of state from context layer
+  const [todos, setTodos] = useContext(AppContext).todos;
+
   const handleSubmit = (e) => {
     e.preventDefault(); // prevents page from refreshing
-    console.log(inputValue);
+
+    // updating the todos piece of state inside context layer
+    setTodos([...todos, inputValue]);
+    console.log(todos);
   };
   return (
     <form onSubmit={handleSubmit}>
