@@ -2,7 +2,8 @@ import { useState } from "react";
 
 const InputField = () => {
   const [inputValue, setInputValue] = useState("");
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault(); // prevents page from refreshing
     console.log(inputValue);
   };
   return (
