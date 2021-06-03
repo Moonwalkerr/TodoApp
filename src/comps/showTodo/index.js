@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { AppContext } from "../../context/context";
 
-const showTodo = (todo, id) => {
+const ShowTodo = (todo, id) => {
   const [todos, setTodos] = useContext(AppContext).todos;
 
   // delete todo handler
@@ -17,4 +17,4 @@ const showTodo = (todo, id) => {
   );
 };
 
-export default showTodo;
+export default ShowTodo;

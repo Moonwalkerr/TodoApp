@@ -12,7 +12,7 @@ const InputField = () => {
 
     // updating the todos piece of state inside context layer
     setTodos([...todos, inputValue]);
-    console.log(todos);
+    // console.log(todos);
   };
   return (
     <form onSubmit={handleSubmit}>

@@ -1,2 +1,2 @@
 export { default as InputField } from "./input";
-export { default as showTodo } from "./showTodo";
+export { default as ShowTodo } from "./showTodo";
