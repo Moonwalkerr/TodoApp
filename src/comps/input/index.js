@@ -22,7 +22,7 @@ const InputField = () => {
   return (
     <>
       <figure>
-        <img src={undraw} alt="TodoApp-Image" />
+        <img src={undraw} alt="TodoApp" />
         <figcaption>Add Your Todos Here...</figcaption>
       </figure>
       <form onSubmit={handleSubmit}>
