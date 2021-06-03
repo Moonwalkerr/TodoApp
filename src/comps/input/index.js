@@ -14,6 +14,7 @@ const InputField = () => {
     if (inputValue !== "") {
       // updating the todos piece of state inside context layer
       setTodos([...todos, inputValue]);
+      setInputValue("");
     }
   };
   return (

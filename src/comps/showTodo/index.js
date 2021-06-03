@@ -6,7 +6,12 @@ const ShowTodo = ({ todo, id }) => {
 
   // delete todo handler
   const delTodo = () => {
-    setTodos(todos.map((todo, Todoid) => Todoid !== id && todo));
+    setTodos(
+      todos.filter((todo, todoId) => {
+        console.log(todo);
+        return todoId !== id;
+      })
+    );
   };
 
   return (
