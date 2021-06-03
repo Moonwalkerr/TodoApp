@@ -12,7 +12,7 @@ function App() {
       <h2>TODO App by Abhishek Mishra !</h2>
       <InputField />
       {todos.length > 0 ? (
-        todos.map((todo, id) => console.log(todo))
+        todos.map((todo, id) => <ShowTodo key={id} id={id} todo={todo} />)
       ) : (
         <h2>No Todos yet</h2>
       )}
