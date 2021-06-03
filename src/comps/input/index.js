@@ -10,9 +10,11 @@ const InputField = () => {
   const handleSubmit = (e) => {
     e.preventDefault(); // prevents page from refreshing
 
-    // updating the todos piece of state inside context layer
-    setTodos([...todos, inputValue]);
-    // console.log(todos);
+    // to prevent taking blank inputs
+    if (inputValue !== "") {
+      // updating the todos piece of state inside context layer
+      setTodos([...todos, inputValue]);
+    }
   };
   return (
     <form onSubmit={handleSubmit}>
