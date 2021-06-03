@@ -5,7 +5,7 @@ import { AppContext } from "./context/context";
 
 function App() {
   //   fetching the todo piece of state from context layer
-  const [todos, setTodos] = useContext(AppContext).todos;
+  const todos = useContext(AppContext).todos[0];
 
   return (
     <div className="App">
