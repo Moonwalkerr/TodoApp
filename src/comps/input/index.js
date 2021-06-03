@@ -24,7 +24,9 @@ const InputField = () => {
         onChange={(e) => setInputValue(e.target.value)}
         type="text"
       />
-      <button type="submit">+</button>
+      <button type="submit">
+        <i class="fas fa-plus"></i>
+      </button>
     </form>
   );
 };

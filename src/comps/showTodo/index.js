@@ -17,7 +17,9 @@ const ShowTodo = ({ todo, id }) => {
   return (
     <div className="showTodo">
       <h3>{todo}</h3>
-      <button onClick={delTodo}>Del</button>
+      <button onClick={delTodo}>
+        <i class="fas fa-trash"></i>
+      </button>
     </div>
   );
 };
