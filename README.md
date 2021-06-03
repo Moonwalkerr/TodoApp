@@ -1,4 +1,5 @@
-## This is a simple Todo app.
+## This is a simple Todo app built using React JS for the ReactJs Final Logical Test held by Excellence Technosoft Pvt ltd
+
 
 ## Tech Stack :
 -   React JS
