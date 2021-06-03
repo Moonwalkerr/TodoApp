@@ -1,0 +1,26 @@
+.App {
+    height: 80vh;
+}
+
+#noTodo {
+    margin: 14px auto;
+    max-width: 34vw;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: #010101;
+    color: #fafafa;
+    font-family: 'Stint Ultra Condensed',
+        cursive;
+    font-size: 22px;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    transition: box-shadow 0.3s;
+    box-shadow: 1px 2px 2px 3px rgba(0, 0, 0, 0.2);
+
+}
+
+
+#noTodo:hover {
+    box-shadow: 1px 2px 2px 3px rgba(0, 0, 0, 0.38);
+}

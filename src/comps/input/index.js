@@ -1,6 +1,7 @@
 import { useState, useContext } from "react";
 import { AppContext } from "../../context/context";
 import "./styles.css";
+import undraw from "../../assets/undraw.svg";
 
 const InputField = () => {
   const [inputValue, setInputValue] = useState("");
@@ -19,17 +20,23 @@ const InputField = () => {
     }
   };
   return (
-    <form onSubmit={handleSubmit}>
-      <input
-        placeholder="✍️ Write your Next Plan today.."
-        value={inputValue}
-        onChange={(e) => setInputValue(e.target.value)}
-        type="text"
-      />
-      <button type="submit">
-        <i class="fas fa-plus"></i>
-      </button>
-    </form>
+    <>
+      <figure>
+        <img src={undraw} alt="TodoApp-Image" />
+        <figcaption>Add Your Todos Here...</figcaption>
+      </figure>
+      <form onSubmit={handleSubmit}>
+        <input
+          placeholder="✍️ Write your Next Plan today.."
+          value={inputValue}
+          onChange={(e) => setInputValue(e.target.value)}
+          type="text"
+        />
+        <button id="submitBtn" type="submit">
+          <i class="fas fa-plus"></i>
+        </button>
+      </form>
+    </>
   );
 };
 

@@ -9,12 +9,11 @@ function App() {
 
   return (
     <div className="App">
-      <h2>TODO App by Abhishek Mishra !</h2>
       <InputField />
       {todos.length > 0 ? (
         todos.map((todo, id) => <ShowTodo key={id} id={id} todo={todo} />)
       ) : (
-        <h2>No Todos yet</h2>
+        <h2 id="noTodo">No Todos yet</h2>
       )}
     </div>
   );
