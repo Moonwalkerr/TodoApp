@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { AppContext } from "../../context/context";
-
+import "./styles.css";
 const ShowTodo = ({ todo, id }) => {
   const [todos, setTodos] = useContext(AppContext).todos;
 

@@ -1,5 +1,6 @@
 import { useState, useContext } from "react";
 import { AppContext } from "../../context/context";
+import "./styles.css";
 
 const InputField = () => {
   const [inputValue, setInputValue] = useState("");
@@ -20,6 +21,7 @@ const InputField = () => {
   return (
     <form onSubmit={handleSubmit}>
       <input
+        placeholder="✍️ Write your Next Plan today.."
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
         type="text"
